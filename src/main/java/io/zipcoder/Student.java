@@ -10,7 +10,7 @@ public class Student {
 
     public ArrayList<Double> examScores;
 
-    public  numberOfExamTaken;
+    public String numberOfExamTaken;
 
     public void Student(String firstName, String lastName, Double[] testScores){
 
@@ -33,7 +33,7 @@ public class Student {
     }
 
     public String getNUmberOfExamsTaken(){
-        return numberOfExamTaken;
+        return getNUmberOfExamsTaken();
     }
 
     public String getExamScores(){
@@ -61,5 +61,9 @@ public class Student {
             average += (double) total/examScores.size();
         }
         return average;
+    }
+
+    public String toString(){
+        return this.toString();
     }
 }

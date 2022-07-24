@@ -32,8 +32,13 @@ public class Student {
         this.lastName = lastName;
     }
 
+    public int getNumberOfExamTaken() {
+        return examScores.size();
+    }
+
     public String getNUmberOfExamsTaken(){
-        return getNUmberOfExamsTaken();
+        return this.numberOfExamTaken;
+
     }
 
     public String getExamScores(){
@@ -64,6 +69,8 @@ public class Student {
     }
 
     public String toString(){
-        return this.toString();
+        return "Student Name: " + getFirstName() + getLastName() + "\n" +
+                "> Average Score: " + getAverageExamScore() + "\n" +
+                "> Exam Scores:\n" + getExamScores();
     }
 }
